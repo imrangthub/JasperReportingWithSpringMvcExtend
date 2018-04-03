@@ -73,19 +73,21 @@ public class ReportWithTableViewController {
 	public String save(ModelMap map, HttpServletResponse resp) throws JRException, IOException {
 		
 		List<Book> bookList =  bookService.bookList();	
+		List<Book> bookListTwo =  bookService.bookList();	
 	    JRDataSource jrDataSource = new JRBeanCollectionDataSource(bookList);
+	    JRDataSource jrDataSourceTwo = new JRBeanCollectionDataSource(bookListTwo);
 		
 		   Map<String, Object> parameterMap = new HashMap<String, Object>();		   
 	       parameterMap.put("title", "Book List");
 	       parameterMap.put("reportFooter", "imranmadbar@gmail.com");
 	       parameterMap.put("companyName", "CS ifo tech");
 	       parameterMap.put("datasource", jrDataSource);
+	       parameterMap.put("datasourceTwo", jrDataSourceTwo);
 		
 			JasperReport jasperReport = null;
 			JasperPrint jasperPrint = null;
-	
-				
-		    File initialFile = new File("G:\\IMRAN_PROJECT\\SpringJasperReporting\\JasperReportintgWithSpringMvcExtend\\src\\main\\webapp\\resources\\report\\reportWithTableView.jrxml");
+
+		    File initialFile = new File("F:\\IMRAN_HOSSAIN\\IMRAN_PROJECT\\SpringJasperReporting\\JasperReportingWithSpringMvcExtend\\JasperReportingWithSpringMvcExtend\\src\\main\\webapp\\resources\\report\\reportWithTableView.jrxml");
 		    InputStream jasperStream = null;
 				try {
 					
@@ -123,10 +125,10 @@ public class ReportWithTableViewController {
 		
 			JasperReport jasperReport = null;
 			JasperPrint jasperPrint = null;
-		 	 HttpHeaders headers = null;				
-			 byte[] bytes = null;	
+		 	HttpHeaders headers = null;				
+			byte[] bytes = null;	
 				
-		    File initialFile = new File("G:\\IMRAN_PROJECT\\SpringJasperReporting\\JasperReportintgWithSpringMvcExtend\\src\\main\\webapp\\resources\\report\\reportWithTableView.jrxml");
+			 File initialFile = new File("F:\\IMRAN_HOSSAIN\\IMRAN_PROJECT\\SpringJasperReporting\\JasperReportingWithSpringMvcExtend\\JasperReportingWithSpringMvcExtend\\src\\main\\webapp\\resources\\report\\reportWithTableView.jrxml");
 		    InputStream jasperStream = null;
 				try {
 					
@@ -166,10 +168,10 @@ public class ReportWithTableViewController {
 		
 			JasperReport jasperReport = null;
 			JasperPrint jasperPrint = null;
-		 	 HttpHeaders headers = null;				
-			 byte[] bytes = null;	
+		 	HttpHeaders headers = null;				
+			byte[] bytes = null;	
 				
-		    File initialFile = new File("G:\\IMRAN_PROJECT\\SpringJasperReporting\\JasperReportintgWithSpringMvcExtend\\src\\main\\webapp\\resources\\report\\reportWithTableView.jrxml");
+			 File initialFile = new File("F:\\IMRAN_HOSSAIN\\IMRAN_PROJECT\\SpringJasperReporting\\JasperReportingWithSpringMvcExtend\\JasperReportingWithSpringMvcExtend\\src\\main\\webapp\\resources\\report\\reportWithTableView.jrxml");
 		    InputStream jasperStream = null;
 				try {
 					

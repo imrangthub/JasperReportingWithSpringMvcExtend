@@ -18,8 +18,8 @@
  	                     <tr>
  	                         <td>${book.id }</td><td>${book.name }</td><td>${book.type }</td>
  	                         <td>
- 	                            <a target="_blank" href="/JasperReportintgWithSpringMvc/book/singleShow?id=${book.id}">Show</a> || 
- 	                            <a href="/JasperReportintgWithSpringMvc/report/singlePrint?id=${book.id}">Print</a> ||
+ 	                            <a target="_blank" href="${pageContext.request.contextPath}/book/singleShow?id=${book.id}">Show</a> || 
+ 	                            <a href="${pageContext.request.contextPath}/report/singlePrint?id=${book.id}">Print</a> ||
  	                         </td>
  	                     </tr>
  	                 </c:forEach>

@@ -9,9 +9,9 @@
 	<h1 align="center">Welcome to Static Report with parameterMap Data</h1>
        <a class="btn btn-primary btn-lg" href="/JasperReportintgWithSpringMvcExtend/" role="button">Home</a>
        
-       <a class="btn btn-success btn-lg" target="blank" href="/JasperReportintgWithSpringMvcExtend/staticReportWithParams/view" role="button">View  Report</a>
-       <a class="btn btn-success btn-lg" href="/JasperReportintgWithSpringMvcExtend/staticReportWithParams/download" role="button">Download  Report</a>
-       <a class="btn btn-success btn-lg" href="/JasperReportintgWithSpringMvcExtend/staticReportWithParams/save" role="button">Save to Desktop</a>
+       <a class="btn btn-success btn-lg" target="blank" href="${pageContext.request.contextPath}/staticReportWithParams/view" role="button">View  Report</a>
+       <a class="btn btn-success btn-lg" href="${pageContext.request.contextPath}/staticReportWithParams/download" role="button">Download  Report</a>
+       <a class="btn btn-success btn-lg" href="${pageContext.request.contextPath}/staticReportWithParams/save" role="button">Save to Desktop</a>
        
        
 

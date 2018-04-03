@@ -9,9 +9,9 @@
 	<h1 align="center">Welcome to Static Report With Data source</h1>
        <a class="btn btn-primary btn-lg" href="/JasperReportintgWithSpringMvcExtend/" role="button">Home</a>
        
-       <a target="blank" class="btn btn-success btn-lg" href="/JasperReportintgWithSpringMvcExtend/staticReportWithDataSource/view" role="button">View  Report</a>
-       <a class="btn btn-success btn-lg" href="/JasperReportintgWithSpringMvcExtend/staticReportWithDataSource/download" role="button">Download  Report</a>
-       <a class="btn btn-success btn-lg" href="/JasperReportintgWithSpringMvcExtend/staticReportWithDataSource/save" role="button">Save to Desktop</a>
+       <a target="blank" class="btn btn-success btn-lg" href="${pageContext.request.contextPath}/staticReportWithDataSource/view" role="button">View  Report</a>
+       <a class="btn btn-success btn-lg" href="${pageContext.request.contextPath}/staticReportWithDataSource/download" role="button">Download  Report</a>
+       <a class="btn btn-success btn-lg" href="${pageContext.request.contextPath}/staticReportWithDataSource/save" role="button">Save to Desktop</a>
        
        
 

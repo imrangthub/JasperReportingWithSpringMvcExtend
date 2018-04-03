@@ -9,9 +9,9 @@
 	<h1 align="center">Report With Table View</h1>
        <a class="btn btn-primary btn-lg" href="/JasperReportintgWithSpringMvcExtend/" role="button">Home</a>
        
-       <a target="blank"  class="btn btn-success btn-lg" href="/JasperReportintgWithSpringMvcExtend/reportWithTableView/view" role="button">View  Report</a>
-       <a class="btn btn-success btn-lg" href="/JasperReportintgWithSpringMvcExtend/reportWithTableView/download" role="button">Download  Report</a>
-       <a class="btn btn-success btn-lg" href="/JasperReportintgWithSpringMvcExtend/reportWithTableView/save" role="button">Save to Desktop</a>
+       <a target="blank"  class="btn btn-success btn-lg" href="${pageContext.request.contextPath}/reportWithTableView/view" role="button">View  Report</a>
+       <a class="btn btn-success btn-lg" href="${pageContext.request.contextPath}/reportWithTableView/download" role="button">Download  Report</a>
+       <a class="btn btn-success btn-lg" href="${pageContext.request.contextPath}/reportWithTableView/save" role="button">Save to Desktop</a>
        
        
 

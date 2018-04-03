@@ -6,11 +6,11 @@
 	<div class="row">
 	
 	<h1 align="center">========= Jasper  Report =========</h1>
-       <a class="btn btn-primary btn-lg" href="/JasperReportintgWithSpringMvcExtend/static/" role="button">Static Report</a>
-       <a class="btn btn-primary btn-lg" href="/JasperReportintgWithSpringMvcExtend/staticReportWithParams/" role="button">Report With Params</a>
-       <a class="btn btn-primary btn-lg" href="/JasperReportintgWithSpringMvcExtend/staticReportWithDataSource/" role="button">Report With Data Source</a>
-       <a class="btn btn-primary btn-lg" href="/JasperReportintgWithSpringMvcExtend/reportWithTableView/" role="button">Report With Table View</a>
-       <a class="btn btn-primary btn-lg" href="/JasperReportintgWithSpringMvcExtend/reportWithTemplate/" role="button">Report With Design Template</a>
+       <a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/static/" role="button">Static Report</a>
+       <a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/staticReportWithParams/" role="button">Report With Params</a>
+       <a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/staticReportWithDataSource/" role="button">Report With Data Source</a>
+       <a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/reportWithTableView/" role="button">Report With Table View</a>
+       <a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/reportWithTemplate/" role="button">Report With Design Template</a>
 
 
 	</div>
