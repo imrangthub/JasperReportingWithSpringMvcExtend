@@ -54,6 +54,32 @@ public class BookService {
 		return bookList;		
 	}
 	
+	
+	public List<Book> bookListCustome(){
+		List<Book> bookList = new ArrayList<Book>();
+		
+		String getAllDataQuery = "SELECT * FROM `book` ORDER BY ID"; 
+//		   System.out.println(getAllDataQuery);
+		try {
+			this.stmt = dataSource.getConnection().createStatement();
+			ResultSet tempResult = stmt.executeQuery(getAllDataQuery);
+			while(tempResult.next()){
+				Book bookObj = new Book();
+				bookObj.setId(Long.parseLong(tempResult.getString("id")));
+				bookObj.setName(tempResult.getString("name"));
+				bookObj.setType(tempResult.getString("type"));
+				bookObj.setAuthor_id(Integer.parseInt(tempResult.getString("author_id")));
+				bookList.add(bookObj);
+			}
+			stmt.close();
+			dataSource.getConnection().close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return bookList;		
+	}
+	
 	public List<Book>  getById(long id){
 		List<Book> singleBook = new ArrayList<Book>();
 		String getQuery ="select * from book WHERE id='"+id+"'";

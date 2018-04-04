@@ -67,12 +67,12 @@
 			<pen lineWidth="0.5" lineColor="#000000"/>
 		</box>
 	</style>
-	<subDataset name="Table Dataset 1" uuid="855cda92-8623-4c66-80f3-29624024a414"/>
-	<subDataset name="Table Dataset 2" uuid="17233674-296e-470c-b5b1-bfcbc42cbee8"/>
-	<subDataset name="Table Dataset 3" uuid="bb7a0f30-d44f-4248-9759-0b5da0ad73f0"/>
 	<parameter name="title" class="java.lang.String" isForPrompting="false"/>
 	<parameter name="reportFooter" class="java.lang.String" isForPrompting="false"/>
 	<parameter name="companyName" class="java.lang.String" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
 	<field name="id" class="java.lang.Long"/>
 	<field name="name" class="java.lang.String"/>
 	<field name="type" class="java.lang.String"/>
